@@ -3,7 +3,7 @@
 
 This is one of a _mandatory_ assignments as a student **RevoU**.
 Kindly refer to the below deployed **link** for the grading purposes.
-Link: 
+Link: https://revou-fsse-oct25.github.io/milestone-1-Daus2701/index.html
 
 ## Overview
 
