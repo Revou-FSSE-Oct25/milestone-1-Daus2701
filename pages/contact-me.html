@@ -4,82 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reach SFH out</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header style="text-align: right; padding: 10px;">
+    <header>
         <h1>Subarqah Firdhaus Hardiansyah</h1>
-        <nav aria-label="Main Navigation" style="margin-top: 15px;">
-            <a aria-current="page" href="../index.html" style="text-decoration: none; color: black; font-weight: bold;">Home</a>
-            <span style="margin: 0 12px;">|</span>
-            <a href="about-me.html" style="text-decoration: none; color: black; font-weight: bold;">About Me</a>
-            <span style="margin: 0 12px;">|</span>
-            <a href="project.html" style="text-decoration: none; color: black; font-weight: bold;">My Project</a>
-            <span style="margin: 0 12px;">|</span>
-            <a href="contact-me.html" style="text-decoration: none; color: black; font-weight: bold;">Contact Me</a>
-            <hr/>
+        <nav class="navbar">
+            <a aria-current="page" href="../index.html">Home</a>
+            <a href="pages/about-me.html">About Me</a>
+            <a href="pages/project.html">My Project</a>
+            <a href="pages/contact-me.html">Contact Me</a>
         </nav>
     </header>
-    <main style="margin: auto;max-width: 900px;padding: 40px 20px;">
-        <section id="about-daus" style="text-align: left; margin-bottom: 60px;">
-            <h2 style="margin-top: 20px; color: black;">Reach me out!</h2>
-            
-            <p style="text-align:left 700px;margin: 10px auto;">
+    <main>
+        <section id="contact-me">
+            <h2>Reach me out!</h2>
+            <div class="card-container">
+                <div class="card">
+                    <p>
                 I love to interact with people, because I believe if you don't know someone, you can't love them.
-                So, in this section I put some forms you need to fill up to reach me out and talk to me personallya and to know me further
+                In this section I put some forms you need to fill up to reach me out and to know me further.
             </p>
-            <p style="text-align:left 700px;margin: 10px auto;">
-                Or else, if you feel that filling the forms below is too hastle for you, you may download my latest personal CV </p>
-                <a href="/assets/CV - Subarqah Firdhaus Hardiansyah.pdf" download="CV-Subarqah Firdhaus Hardiansyah.pdf" style="text-decoration: none; color: maroon;">Here!</a>
-                <br><br>
-                <hr/>
-                <br><br>
+            <p>
+                Or, if you feel that filling the forms below is too hastle for you, you may download my latest personal CV </p>
+                <a class="cv-btn" href="../assets/CV - Subarqah Firdhaus Hardiansyah.pdf">Download CV</a>
+                </div>
+            </div>
+            
             <form>
-            <section id="personal-information" style="margin-bottom: 40px;">
-                <fieldset>
-                    <legend style="padding: 10px;"><strong>Personal Information</strong></legend>
-                    <label for="fullname">Full Name</label><br>
-                    <input type="text" id="fullname" placeholder="Your Name" required><br><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Your Email" required><br><br>
-                    <label for="phonenumber">Phone Number</label><br>
-                    <input type="text" id="phonenumber" placeholder="Your Phone Number" required><br><br>
-                    <label for="dob">Date of Birth</label><br>
-                    <input type="date" id="dob" required><br><br>
-                    <label for="gender">Gender</label><br>
-                    <input type="radio" id="male" name="gender" value="Male" required><label for="male">Male</label><br>
-                    <input type="radio" id="female" name="gender" value="Female" required><label for="female">Female</label>
-                </fieldset>
-                </section>
-                <section id="additional-information" style="margin-bottom: 40px;">
-                <fieldset>
-                    <legend style="padding: 10px;"><strong>Let me know you better!</strong></legend>
-                    <label for="about-u">Tell me more about you</label><br>
-                    <textarea id="about-u" name="about-u" placeholder="You may tell me about yourself or your projects" rows="6" cols="50" required></textarea>
-                    <br><br>
-                    <label for="reason">Ask me anything!</label><br>
-                    <textarea id="reason" name="reason" placeholder="Don't too personal, keep it professional" rows="6" cols="50" required></textarea>
-                </fieldset>
-                </section>
-                <button type="reset">Reset Form</button>
-                <button type="submit">Submit Form</button>
+            <div class="form-container">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
             </form>
         </section>
         <hr/>
     </main>
 </body>
-<footer style="text-align: center;padding: 10px;">
-        <p>© 2025 <strong>Subarqah Fiirdhaus Hardiansyah</strong>. All rights reserved.</p>
-        <nav aria-label="footer" style="text-align: center; margin-bottom: 40px;">
-            <img src="/assets/git-logo.png" height="20" width="20" style="object-fit: cover; border-radius: 50%;" alt="github logo"/>
-            <a href="https://github.com/Daus2701" style="text-decoration: none;color: black; font-weight: bold;">github</a>
-            <span style="margin: 0 10px; color: black;">|</span>
-            <img src="/assets/linkedin-logo.png" height="20" width="20" style="object-fit: cover; border-radius: 50%;" alt="inkedin logo"/>
-            <a href="http://www.linkedin.com/in/subarqah-firdhaus-hardiansyah-663502106" style="text-decoration: none;color: black; font-weight: bold;">linkedin</a>
-            <span style="margin: 0 10px; color: black;">|</span>
-            <img src="/assets/gmail-logo.jpg" height="20" width="20" style="object-fit: cover; border-radius: 50%;" alt="gmail logo"/>
-            <a href="mailto:fhardiansyah91@gmail.com" style="text-decoration: none;color: black; font-weight: bold;">gmail</a>
-        </nav>
+<footer class="site-footer">
+    <p>© 2025 <strong>Subarqah Fiirdhaus Hardiansyah</strong>. All rights reserved.</p>
 
-    </footer>
+    <nav class="footer-social">
+        <a href="https://github.com/Daus2701" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/subarqah-fiirdhaus-hardiansyah-6607a234b/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:fhardiansyah91@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </nav>
+</footer>
 
 </html>
